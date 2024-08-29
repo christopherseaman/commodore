@@ -1,4 +1,4 @@
-#! /bin/env bash
+#! /bin/bash
 
 # Load environment variables from .env file
 set -o allexport
