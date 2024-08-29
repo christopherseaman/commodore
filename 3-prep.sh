@@ -24,7 +24,7 @@ SELECT *,
 FROM parquet_scan('${SURVEY_DATA}');
 
 -- Step 2: Write the updated data to a new Parquet file
-COPY survey_data TO '${SURVEY_DATA}' (FORMAT 'parquet');
+COPY survey_data TO '${PREPARED_DATA}' (FORMAT 'parquet');
 " 2>> error.log
 
 # Check if the DuckDB command was successful

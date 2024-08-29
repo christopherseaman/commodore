@@ -23,7 +23,7 @@ duckdb "$TEMP_DB" <<EOF
 			, i.efyde_tot_22
 			, i.typeinst
 			, i.insttype
-		FROM '${SURVEY_DATA}' b
+		FROM '${PREPARED_DATA}' b
 		LEFT JOIN '${IPEDS_DATA}' i
 		ON b."IPED ID" = i.unitid
 	);
